@@ -1,0 +1,9 @@
+# templates/istio-system-namespace.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: istio-system
+  labels:
+    topology.istio.io/network: network1   # use network2 in the second cluster
+  annotations:
+    argocd.argoproj.io/sync-wave: '-1'
