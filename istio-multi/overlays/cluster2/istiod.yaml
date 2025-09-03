@@ -21,7 +21,7 @@ spec:
         - values.yaml
       values: |
         env:
-          AMBIENT_ENABLE_MULTI_NETWORK: true
+          AMBIENT_ENABLE_MULTI_NETWORK: "true"
         global:
           meshID: mesh1
           multiCluster:

@@ -1,9 +1,12 @@
-# templates/istio-system-namespace.yaml
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: istio-system
   labels:
-    topology.istio.io/network: network2   # use network2 in the second cluster
+    kubernetes.io/metadata.name: istio-system
+    topology.istio.io/network: network2
+  name: istio-system
   annotations:
     argocd.argoproj.io/sync-wave: '-1'
+spec:
+  finalizers:
+  - kubernetes
