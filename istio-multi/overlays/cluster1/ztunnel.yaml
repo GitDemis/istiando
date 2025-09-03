@@ -15,7 +15,7 @@ spec:
   source:
     repoURL: https://istio-release.storage.googleapis.com/charts
     chart: ztunnel
-    targetRevision: 1.26.0
+    targetRevision: 1.27.0
     helm:
       valueFiles:
         - values.yaml
