@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  labels:
+    kubernetes.io/metadata.name: sample
+    istio.io/dataplane-mode: ambient
+  name: sample
+  annotations:
+    argocd.argoproj.io/sync-wave: '-1'
+spec:
+  finalizers:
+  - kubernetes
