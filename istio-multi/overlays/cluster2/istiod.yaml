@@ -26,6 +26,7 @@ spec:
           meshID: mesh1
           multiCluster:
             clusterName: cluster2
+            enabled: true
           network: network2
         profile: ambient
   syncPolicy:
