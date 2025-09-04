@@ -9,3 +9,4 @@ resources:
 - ztunnel.yaml
 - namespace.yaml
 - cluster1-ewgateway.yaml
+- cross.yaml
